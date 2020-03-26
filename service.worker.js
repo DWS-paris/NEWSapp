@@ -2,6 +2,7 @@
 Gestion du cache
 */
 const staticAssets = [
+    '/',
     '/css/style.css',
     '/fallback/no-news.json',
     '/img/icons/icon-72x72.png',
@@ -15,8 +16,7 @@ const staticAssets = [
     'index.html',
     '/js/app.js',
     '/js/fetch.class.js',
-    '/js/form.class.js',
-    'manifest.json'
+    '/js/form.class.js'
 ];
 //
 

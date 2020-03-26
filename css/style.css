@@ -1,0 +1,207 @@
+/* 
+Reset
+*/
+    :root{
+        --main-color: red;
+    }
+
+    body{
+        padding: 8rem;
+    }
+
+    header{
+        margin-bottom: 5rem;
+    }
+
+    input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus{
+        background-color: transparent;
+    }
+
+    input[type='email']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='text']:focus, input[type='url']:focus, textarea:focus, select:focus{
+        border-color: var(--main-color);
+    }
+
+    .button, button, input[type='button'], input[type='reset'], input[type='submit']{
+        background-color: var(--main-color);
+        border-color: var(--main-color);
+    }
+
+    a {
+        color: var(--main-color);
+    }
+/**/
+
+/* 
+Loading
+*/
+    #loading {
+        position: fixed;
+        z-index: 1000;
+        top: -110vh;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    #loading.open{
+        opacity: 1;
+        top: 0;
+    }
+
+    #loading.open.close{
+        opacity: 0;
+    }
+
+    #loading img{
+        width: 15rem;
+        height: 15rem;
+        display: block;
+        margin: auto;
+    }
+/**/
+
+/* 
+Common
+*/
+    .error{
+        border: .1rem solid var(--main-color) !important;
+    }
+
+    .hidden{
+        display: none;
+    }
+/**/
+
+
+/* 
+Navigation
+*/
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        line-height: 1;
+    }
+
+    nav .bookmarks {
+        clear: both;
+        margin: 2rem 0 4rem 0;
+        border: .1rem solid var(--main-color);
+        padding: 1rem;
+    }
+
+    nav .bookmarksList {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav .bookmarksList li{
+        padding-right: 1rem;
+        margin-bottom: .5rem;
+    }
+
+    nav .title {
+        font-size: 4rem;
+    }
+
+    nav button{
+        height: auto;
+        padding: .5rem;
+        line-height: 1;
+        margin-bottom: 0;
+    }
+
+    nav > ul > li button{
+        float: right;
+    }
+
+    nav .bookmarksLit {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    nav .bookmarksLit li button{
+        margin-right: 1rem;
+    }
+/**/
+
+/* 
+News feed/form
+*/
+    #newsForm select {
+        font-size: 3rem;
+        height: auto;
+        font-weight: 100;
+        color: var(--main-color);
+        border: .1rem dotted var(--main-color);
+    }
+
+    #newsForm [type="button"] {
+        float: right;
+    }
+
+    #newsForm {
+        border-bottom: .1rem solid red;
+        padding-bottom: 1rem;
+    }
+
+    #newsForm [type="button"]{
+        display: none;
+    }
+
+    #newsForm [type="button"].active{
+        display: initial;
+    }
+
+    #newsFeed{
+        line-height: 1;
+        list-style: none;
+    }
+
+    #newsFeed > li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 3rem;
+        min-height: 20rem;
+    }
+
+    #newsFeed .cover {
+        width: calc( 40% - 1rem );
+        position: relative;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #newsFeed ul {
+        padding: 0;
+        margin: auto;
+        list-style: none;
+        width: calc( 60% - 5rem );
+    }
+
+    #newsFeed .title {
+        font-size: 2.1rem;
+        margin-bottom: 2rem;
+    }
+
+    #newsFeed .publishedAt {
+        background-color: var(--main-color);
+        padding: .5rem;
+        display: inline-block;
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+    }
+
+    #newsFeed a {
+        border-bottom: .1rem solid red;
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+/**/

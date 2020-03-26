@@ -11,6 +11,43 @@
 
         <!-- Ajouter le manifest -->
         <link rel="manifest" href="./manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="News Feed">
+
+        <meta name="application-name" content="News">
+        <meta name="apple-mobile-web-app-title" content="News">
+        <meta name="theme-color" content="#ff0000">
+        <meta name="msapplication-navbutton-color" content="#ff0000">
+        <meta name="msapplication-starturl" content="/index.html">
+
+        <link rel="icon" sizes="192x192" href="./img/icons/icon-192x192.png">
+        <link rel="icon" sizes="128x128" href="./img/icons/icon-128x128.png">
+        <link rel="apple-touch-icon" sizes="128x128" href="./img/icons/icon-128x128.png">
+        <link rel="apple-touch-icon-precomposed" sizes="128x128" href="./img/icons/icon-128x128.png">
+
+        <script>
+            // This is the service worker with the Cache-first network
+            // Add this below content to your HTML page, or add the js file to your page at the very top to register service worker
+      
+            // Check compatibility for the browser we're running this in
+            if ("serviceWorker" in navigator) {
+              if (navigator.serviceWorker.controller) {
+                console.log("[PWA Builder] active service worker found, no need to register");
+              } else {
+                // Register the service worker
+                navigator.serviceWorker
+                .register("./service.worker.js", {
+                    scope: "./"
+                })
+                .then( (reg) => {
+                    console.log("[PWA Builder] Service worker has been registered for scope: " + reg.scope);
+                });
+              }
+            }
+        </script>
     </head>
     <body>
         <header>

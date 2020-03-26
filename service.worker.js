@@ -2,7 +2,7 @@
 Gestion du cache
 */
 const staticAssets = [
-    'css/style.css',
+    '/css/style.css',
     '/fallback/no-news.json',
     '/img/icons/icon-72x72.png',
     '/img/icons/icon-96x96.png',

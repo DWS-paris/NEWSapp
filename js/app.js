@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', () => {
     Declarations
     */
         const apiUrl = 'https://newsapp.dwsapp.io/api';
-        const socket = io('https://174.138.14.93:7498');
-        const socketServer = io('https://newsapp.dwsapp.io');
         let newsSources = null;
         let userBookmarks = [];
         const news_api_token = { news_api_token: '97fccbac2fae46b4a05123f1b5aa016b' }

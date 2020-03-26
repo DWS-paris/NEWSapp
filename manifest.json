@@ -1,0 +1,16 @@
+{
+    "lang": "fr",
+    "name": "News Feed",
+    "short_name": "News",
+    "dir": "ltr",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/?homescreen=1",
+    "display": "standalone",
+    "theme_color": "#999999",
+    "background_color": "#ffffff",
+    "description": "News Feed vous permet de suivre l'actualité en direct.",
+    "icons": [
+        
+    ]
+}

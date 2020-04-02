@@ -1,23 +1,23 @@
 /*
 Gestion du cache
 */
-const staticAssets = [
-    '/',
-    '/css/style.css',
-    '/fallback/no-news.json',
-    '/img/icons/icon-72x72.png',
-    '/img/icons/icon-96x96.png',
-    '/img/icons/icon-128x128.png',
-    '/img/icons/icon-144x144.png',
-    '/img/icons/icon-152x152.png',
-    '/img/icons/icon-192x192.png',
-    '/img/icons/icon-384x384.png',
-    '/img/icons/icon-512x512.png',
-    'index.html',
-    '/js/app.js',
-    '/js/fetch.class.js',
-    '/js/form.class.js'
-];
+    const staticAssets = [
+        './',
+        './css/style.css',
+        './fallback/no-news.json',
+        './img/icons/icon-72x72.png',
+        './img/icons/icon-96x96.png',
+        './img/icons/icon-128x128.png',
+        './img/icons/icon-144x144.png',
+        './img/icons/icon-152x152.png',
+        './img/icons/icon-192x192.png',
+        './img/icons/icon-384x384.png',
+        './img/icons/icon-512x512.png',
+        './index.html',
+        './js/app.js',
+        './js/fetch.class.js',
+        './js/form.class.js'
+    ];
 //
 
 
